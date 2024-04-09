@@ -1,4 +1,4 @@
-public class Card {
+public class CardSOLUTION {
 
     public enum Suit{
         SPADES,
@@ -24,7 +24,7 @@ public class Card {
     private Suit suit;
     private Rank rank;
 
-    public Card(Suit suit, Rank rank){
+    public CardSOLUTION(Suit suit, Rank rank){
         this.suit = suit;
         this.rank = rank;
     }
@@ -35,9 +35,8 @@ public class Card {
         return rank;
     }
 
-    public boolean equals(Card other){
-        //TODO: write equals method comparing rank and suit enums
-        return false;
+    public boolean equals(CardSOLUTION other){
+        return rank == other.getRank() && suit == other.getSuit();
     }
     
 }

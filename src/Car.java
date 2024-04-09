@@ -19,41 +19,48 @@ public class Car {
         this.model = model;
       }
 
-      //getters 
+      /*----------------------------------------------------------------------------------- */
+      //getters for year make, and model (should be easy to write these)
+
       public int getYear(){
-        return year;
+        //TODO: fix method to return correct value
+        return -1000;
       }
       public String getMake(){
-        return make;
+        //TODO: fix method to return correct value
+        return null;
       }
       public String getModel(){
-        return model;
+        //TODO: fix method to return correct value
+        return null;
       }
 
 
       /*----------------------------------------------------------------------------------- */
-      //TODO
 
-      // public String getColor(){
-      //   if (color == Color.WHITE)
-      //   switch(color){
-      //     case WHITE: return "The car is white.";
-      //     case BLUE: 
+      /* methods to paint car different colors - good example of how objects allow us to specify exactly 
+      what users can change and what parts of an object cannot be changed 
 
-      //   }
-      //   //get a string representation of the color using a switch statement
-      // }
+      ie. you can't paint the car any color, maybe we only have red blue or green paint available, you set the year
+      make and model when you create the car, but it wouldn't make sense to allow you to change those things later
+      */
 
       public void paintRed(){
-        color=Color.RED;
+        //TODO: change the color of the car to the correct enum
       }
       public void paintBlue(){
-        color = Color.BLUE;
+        //TODO: change the color of the car to the correct enum
       }
       public void paintGreen(){
-        color = Color.GREEN;
+        //TODO: change the color of the car to the correct enum
       }
-      public Color getColor(){return color;}
+
+      //note the return type of this method - we've already passed in objects as parameters and returned objects 
+      //(Strings, Arrays, ... ), we can do the same thing with more complex objects and enums
+      public Color getColor(){
+        //TODO: return current color of car 
+        return null;
+      }
 
       public String toString(){
         return("Make: " + make + " | Model: " +model + " | Year: "+ year + " | Color: " + color);
@@ -62,11 +69,14 @@ public class Car {
       }
 
       public boolean equals(Car other){
-        return(year==other.getYear() && model.equals(other.getModel()) 
-      && make .equals(other.getMake()) && color == other.getColor());
+        /*TODO: compare each value of the object we are calling this from and the "other" objects to see if they
+        contain all the same values 
+        
+        Why cant we do car1.equals(car2) without writing our own equals method? 
+        What would the general equals method return and why? 
+        */
+
+        return false;
       }
-
-
-      //do we need the getColor string rep? what happens if we directly call the enum value?
 
 }

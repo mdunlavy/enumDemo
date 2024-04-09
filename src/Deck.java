@@ -1,12 +1,12 @@
-import java.util.ArrayList;
+
 
 public class Deck {
     public static void main(String[] args) {
 
-        //what is an arraylist - why are we using it here? how would we write it as an array instead?
-        Card[] arr = new Card[52];
+        Card[] arr = new Card[52]; //deck of size 52
 
         //Card.rank.values() returns an array of all the values in the enum Rank so we can access them using an index
+        
         for(int i = 0; i < arr.length; i+= 4){
            arr[i] =(new Card(Card.Suit.SPADES, Card.Rank.values()[i]));
             arr[i+1] = (new Card(Card.Suit.HEARTS, Card.Rank.values()[i]));
