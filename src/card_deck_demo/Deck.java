@@ -16,7 +16,7 @@ public class Deck {
         }
 
     }
-    public void shuffle(){
+    public static void shuffle(){
         /* TODO: 
         * using the swap method, effectively "shuffle" the deck 
         *
@@ -25,7 +25,7 @@ public class Deck {
         *
         */
     }
-    public void swap(int index1, int index2){
+    public static void swap(int index1, int index2){
         /* TODO: 
          * 
          * swap the elements at the two given indexes
@@ -36,7 +36,7 @@ public class Deck {
         
     }
 
-    public void printDeck(){
+    public static void printDeck(){
         /*TODO: 
          * Print the deck out with a comma in between each card, but without a comma after the last card 
          * 
@@ -44,7 +44,7 @@ public class Deck {
 
     }
 
-    public Card[] draw5(){
+    public static Card[] draw5(){
         //TODO: Draw 5 cards from the deck and return them in an Array of Cards that will hold 5 Cards
 
         //Hint: You will need to create a new array of 5 cards- which side of the array do you want to draw from? 
