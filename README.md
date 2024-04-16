@@ -16,4 +16,6 @@ The next example is a deck of cards. This expands more on enums and how they can
 
 Students will then write an equals method for Card, comparing two enums and getting more practice and understanding of the importance of equals. 
 
-*SOLUTION files have all the solutions to methods that students should finish in lab 
+*SOLUTION files have all the solutions to methods that students should finish in lab
+
+ 

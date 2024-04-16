@@ -1,7 +1,10 @@
 
 
 public class Deck {
+
+
     private static Card [] arr;
+
     public static void main(String[] args) {
 
         arr = new Card[52]; //deck of size 52
@@ -16,7 +19,6 @@ public class Deck {
             arr[i+3] = (new Card(Card.Suit.CLUBS, Card.Rank.values()[rank]));
             rank++;
         }
-
     }
     public static void shuffle(){
         /* TODO: 
@@ -26,7 +28,9 @@ public class Deck {
         * that executes 7 times)
         *
         */
+
     }
+
     public static void swap(int index1, int index2){
         /* TODO: 
          * 
@@ -36,21 +40,31 @@ public class Deck {
          * 
          */
         
-    }
-
-    public static void printDeck(){
-        /*TODO: 
-         * Print the deck out with a comma in between each card, but without a comma after the last card 
-         * 
-         */
-
+        
     }
 
     public static Card[] draw5(){
+        Card[] hand = new Card[5];
+        int start = 0;
+        while(true){
+            if (arr[start] == null){
+                start++;
+            } else {
+                break;
+            }
+        }
+
+        for (int i = start; i < hand.length; i++){
+            hand[i] = arr[i];
+            arr[i] = null;
+        }
         //TODO: Draw 5 cards from the deck and return them in an Array of Cards that will hold 5 Cards
 
-        //Hint: You will need to create a new array of 5 cards- which side of the array do you want to draw from? 
-        //how do you want to check if a current location is null? - do you want to resize the array? 
+        /*
+         * allow students to choose how they will remove the cards from the deck 
+         * need to set value in arr to null after drawing the card, and make sure to not draw the same card twice
+         * either take from the front, the end or a random index and loop to find valid cards each time you draw 
+         */
         return null;
     }
 
